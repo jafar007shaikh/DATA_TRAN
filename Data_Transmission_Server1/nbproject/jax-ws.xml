@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jax-ws xmlns="http://www.netbeans.org/ns/jax-ws/1">
+  <services>
+    <service name="performanceService">
+      <implementation-class>Classes.performanceService</implementation-class>
+    </service>
+    <service name="SearchService">
+      <implementation-class>Classes.SearchService</implementation-class>
+    </service>
+    <service name="GetFileDataService">
+      <implementation-class>Classes.GetFileDataService</implementation-class>
+    </service>
+    <service name="getfilelistService">
+      <implementation-class>Classes.getfilelistService</implementation-class>
+    </service>
+  </services>
+  <clients>
+    <client name="KeygenerationService">
+      <wsdl-url>http://localhost:8080/Data_Transmission_using_TPA/KeygenerationService?WSDL</wsdl-url>
+      <local-wsdl-file>localhost_8080/Data_Transmission_using_TPA/KeygenerationService.wsdl</local-wsdl-file>
+      <package-name>com.mycompany.data_transmission_using_tpa</package-name>
+      <catalog-file>catalog.xml</catalog-file>
+      <wsimport-options>
+        <wsimport-option>
+          <wsimport-option-name>extension</wsimport-option-name>
+          <wsimport-option-value>true</wsimport-option-value>
+        </wsimport-option>
+        <wsimport-option>
+          <wsimport-option-name>verbose</wsimport-option-name>
+          <wsimport-option-value>true</wsimport-option-value>
+        </wsimport-option>
+        <wsimport-option>
+          <wsimport-option-name>fork</wsimport-option-name>
+          <wsimport-option-value>false</wsimport-option-value>
+        </wsimport-option>
+        <wsimport-option>
+          <wsimport-option-name>wsdlLocation</wsimport-option-name>
+          <wsimport-option-value>http://localhost:8080/Data_Transmission_using_TPA/KeygenerationService?WSDL</wsimport-option-value>
+        </wsimport-option>
+        <wsimport-option>
+          <wsimport-option-name>xnocompile</wsimport-option-name>
+          <wsimport-option-value>true</wsimport-option-value>
+        </wsimport-option>
+        <wsimport-option>
+          <wsimport-option-name>xendorsed</wsimport-option-name>
+          <wsimport-option-value>true</wsimport-option-value>
+        </wsimport-option>
+      </wsimport-options>
+    </client>
+  </clients>
+  <jsr109>false</jsr109>
+</jax-ws>

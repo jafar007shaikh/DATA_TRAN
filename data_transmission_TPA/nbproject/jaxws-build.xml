@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?><!--
+        *** GENERATED FROM jax-ws.xml - DO NOT EDIT !                             ***
+        *** TO MODIFY wsimport options USE Web Service node -> Edit WS Attributes ***
+        *** TO CHANGE TARGETS GENERATED TO jaxws-build.xml COPY THOSE             ***
+        *** TARGETS TO ../build.xml AND MODIFY THAT FILE INSTEAD                  ***
+
+        --><project xmlns:xalan="http://xml.apache.org/xslt" xmlns:webproject2="http://www.netbeans.org/ns/web-project/2" xmlns:jaxws="http://www.netbeans.org/ns/jax-ws/1">
+    <!--
+                ===================
+                JAX-WS WSGEN SECTION
+                ===================
+            -->
+    <!--
+                ===================
+                JAX-WS WSIMPORT SECTION
+                ===================
+            -->
+    <target name="wsimport-init" depends="init">
+        <fail if="${wsimport.bad.version}" message="WsImport ant task defined in the classpath ${j2ee.platform.wsimport.classpath} has a serious bug. See http://wiki.netbeans.org/MetroIssue for details."/>
+        <mkdir dir="${build.generated.sources.dir}/jax-ws"/>
+        <property name="j2ee.platform.wsimport.classpath" value="${libs.jaxws21.classpath}"/>
+        <taskdef name="wsimport" classname="com.sun.tools.ws.ant.WsImport">
+            <classpath path="${java.home}/../lib/tools.jar:${j2ee.platform.wsimport.classpath}:${javac.classpath}"/>
+        </taskdef>
+        <condition property="conf-dir" value="${conf.dir}/" else="">
+            <isset property="conf.dir"/>
+        </condition>
+    </target>
+    <target name="wsimport-client-LoginService" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/LoginService"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/LoginService" destdir="${build.generated.dir}/jax-wsCache/LoginService" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/LoginService/wsdl/localhost_8080/Data_Transmission_using_TPA/LoginService.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/Data_Transmission_using_TPA/LoginService?WSDL" xnocompile="true" xendorsed="true">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/LoginService/wsdl/localhost_8080/Data_Transmission_using_TPA/LoginService.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/LoginService"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/LoginService">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-LoginService" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/com/mycompany/data_transmission_using_tpa"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/LoginService"/>
+    </target>
+    <target name="wsimport-client-RegisterService" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/RegisterService"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/RegisterService" destdir="${build.generated.dir}/jax-wsCache/RegisterService" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/RegisterService/wsdl/localhost_8080/Data_Transmission_using_TPA/RegisterService.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/Data_Transmission_using_TPA/RegisterService?WSDL" xnocompile="true" xendorsed="true">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/RegisterService/wsdl/localhost_8080/Data_Transmission_using_TPA/RegisterService.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/RegisterService"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/RegisterService">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-RegisterService" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/com/mycompany/data_transmission_using_tpa"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/RegisterService"/>
+    </target>
+    <target name="wsimport-client-KeygenerationService" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/KeygenerationService"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/KeygenerationService" destdir="${build.generated.dir}/jax-wsCache/KeygenerationService" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/KeygenerationService/wsdl/localhost_8080/Data_Transmission_using_TPA/KeygenerationService.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/Data_Transmission_using_TPA/KeygenerationService?WSDL" xnocompile="true" xendorsed="true">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/KeygenerationService/wsdl/localhost_8080/Data_Transmission_using_TPA/KeygenerationService.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/KeygenerationService"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/KeygenerationService">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-KeygenerationService" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/com/mycompany/data_transmission_using_tpa"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/KeygenerationService"/>
+    </target>
+    <target name="wsimport-client-GetFileDataService" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/GetFileDataService"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/GetFileDataService" destdir="${build.generated.dir}/jax-wsCache/GetFileDataService" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/GetFileDataService/wsdl/localhost_8084/Data_Transmission_Server1/GetFileDataService.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8084/Data_Transmission_Server1/GetFileDataService?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/GetFileDataService/wsdl/localhost_8084/Data_Transmission_Server1/GetFileDataService.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/GetFileDataService"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/GetFileDataService">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-GetFileDataService" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/classes"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/GetFileDataService"/>
+    </target>
+    <target name="wsimport-client-QuestionCheck" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/QuestionCheck"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/QuestionCheck" destdir="${build.generated.dir}/jax-wsCache/QuestionCheck" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/QuestionCheck/wsdl/localhost_8080/Data_Transmission_using_TPA/QuestionCheck.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/Data_Transmission_using_TPA/QuestionCheck?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/QuestionCheck/wsdl/localhost_8080/Data_Transmission_using_TPA/QuestionCheck.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/QuestionCheck"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/QuestionCheck">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-QuestionCheck" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/com/mycompany/data_transmission_using_tpa"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/QuestionCheck"/>
+    </target>
+    <target name="wsimport-client-getfilelistService" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/getfilelistService"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/getfilelistService" destdir="${build.generated.dir}/jax-wsCache/getfilelistService" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/getfilelistService/wsdl/localhost_8084/Data_Transmission_Server1/getfilelistService.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8084/Data_Transmission_Server1/getfilelistService?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/getfilelistService/wsdl/localhost_8084/Data_Transmission_Server1/getfilelistService.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/getfilelistService"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/getfilelistService">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-getfilelistService" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/classes"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/getfilelistService"/>
+    </target>
+    <target name="wsimport-client-performanceService" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/performanceService"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/performanceService" destdir="${build.generated.dir}/jax-wsCache/performanceService" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/performanceService/wsdl/localhost_8084/Data_Transmission_Server1/performanceService.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8084/Data_Transmission_Server1/performanceService?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/performanceService/wsdl/localhost_8084/Data_Transmission_Server1/performanceService.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/performanceService"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/performanceService">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-performanceService" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/classes"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/performanceService"/>
+    </target>
+    <target name="wsimport-client-SearchService" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/SearchService"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/SearchService" destdir="${build.generated.dir}/jax-wsCache/SearchService" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/SearchService/wsdl/localhost_8084/Data_Transmission_Server1/SearchService.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8084/Data_Transmission_Server1/SearchService?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/SearchService/wsdl/localhost_8084/Data_Transmission_Server1/SearchService.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/SearchService"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/SearchService">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-SearchService" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/classes"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/SearchService"/>
+    </target>
+    <target name="wsimport-client-generate" depends="wsimport-client-LoginService, wsimport-client-RegisterService, wsimport-client-KeygenerationService, wsimport-client-GetFileDataService, wsimport-client-QuestionCheck, wsimport-client-getfilelistService, wsimport-client-performanceService, wsimport-client-SearchService"/>
+</project>

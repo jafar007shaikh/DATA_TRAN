@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<endpoints version="2.0" xmlns="http://java.sun.com/xml/ns/jax-ws/ri/runtime">
+  <endpoint implementation="com.mycompany.data_transmission_using_tpa.RegisterService" name="RegisterService" url-pattern="/RegisterService"/>
+  <endpoint implementation="com.mycompany.data_transmission_using_tpa.QuestionCheck" name="QuestionCheck" url-pattern="/QuestionCheck"/>
+  <endpoint implementation="com.mycompany.data_transmission_using_tpa.KeygenerationService" name="KeygenerationService" url-pattern="/KeygenerationService"/>
+  <endpoint implementation="com.mycompany.data_transmission_using_tpa.LoginService" name="LoginService" url-pattern="/LoginService"/>
+</endpoints>

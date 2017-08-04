@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is JAX-WS RI 2.2-hudson-740-. --><xs:schema xmlns:tns="http://Classes/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://Classes/">
+
+<xs:element name="getSearchFiles" type="tns:getSearchFiles" />
+
+<xs:element name="getSearchFilesResponse" type="tns:getSearchFilesResponse" />
+
+<xs:complexType name="getSearchFiles">
+<xs:sequence>
+<xs:element name="Userid" type="xs:string" minOccurs="0" />
+<xs:element name="Data" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getSearchFilesResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

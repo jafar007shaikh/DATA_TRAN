@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<endpoints version="2.0" xmlns="http://java.sun.com/xml/ns/jax-ws/ri/runtime">
+  <endpoint implementation="Classes.performanceService" name="performanceService" url-pattern="/performanceService"/>
+  <endpoint implementation="Classes.SearchService" name="SearchService" url-pattern="/SearchService"/>
+  <endpoint implementation="Classes.GetFileDataService" name="GetFileDataService" url-pattern="/GetFileDataService"/>
+  <endpoint implementation="Classes.getfilelistService" name="getfilelistService" url-pattern="/getfilelistService"/>
+</endpoints>

@@ -1,0 +1,32 @@
+Email 			Filename	Time	Memory		Algo		Level
+ak@gmail.com		bollywood1.txt	1951.0	124741.0	Base		15
+ak@gmail.com		bollywood1.txt	1878.0	96904.0		Proposed	14
+rg@gmail.com		sports1.txt	2258.0	116237.0	Base		17
+rg@gmail.com		sports1.txt	1962.0	101969.0	Proposed	15
+shikhamaxtech@gmail.com	politics1.txt	2350.0	147302.0	Base		14
+shikhamaxtech@gmail.com	politics1.txt	2030.0	101486.0	Proposed	13
+
+
+
+Classes:--
+1)AES.java:-Perform encryption and decryption using AES 
+2)Methods.java:- contain methods for file read and write
+3)SHA.java: to generate sha key 
+4)Utilities.java:- contain methods to generate services
+5)BTree.java:-to generate BTree
+6)FileDownload.java:-TO Download File
+6)FileUpload.java:-File to upload File for Based MarkleyHashTree
+8)FileUpload_1.java:-File to upload File for Proposed BTree
+9)FileUpdate.java:-to update and save file data
+10)RemoveStopWord.java:-to Remove stop words
+11)MarkleyHashTree.java:to generate MHT
+Methods:--
+1)encrypt()
+2)decrypt()
+3)writeStrTxt()
+4)readfile()
+5)sha256()
+6)getconnect()
+7)insertData()
+8)getkey()
+10)
